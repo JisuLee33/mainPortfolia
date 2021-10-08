@@ -1,10 +1,19 @@
 $(function(){
   //nav list 입력
   const nav = document.getElementById("nav");
-  let list = ["저를 소개합니다","포트폴리오","연락주세요"];
+  let list = ["ABOUT ME","SKILLS","PORTFOLIO","CONTACT ME"];
   let i= 0;
-  while( i<list.length){
-  nav.innerHTML += "<li>"+list[i]+"<li>";
+  while(i<list.length){
+  nav.innerHTML += "<li><a href='#"+i+"'>"+list[i]+"</a></li>";
   i++
   }
+
+  $("#fa-bars").on("click",function(){
+    $(this).hide();
+    $("#nav").show();
+  });
+  $("#nav li").on("click",function(){
+    $("#nav").hide();
+    $("#fa-bars").show();
+  });
 });

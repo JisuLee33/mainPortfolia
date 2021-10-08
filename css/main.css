@@ -21,10 +21,16 @@
   }
   /* === START HEADER === */
   header {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     background-color: #74b9ff;
+    position: fixed;
+    border-radius: 4px;
   }
+    header .fa-bars {
+      display: none;
+      margin: 10px 0 10px 10px;
+    }
    .nav {
     max-width: 800px; 
     height: 100%;
@@ -37,6 +43,7 @@
    .nav li {
      width: 150px;
      height: 25px;
+     margin: 10px 0;
    }
 
    /* === END HEADER === */
@@ -47,41 +54,71 @@
     height: auto;
     margin: 0 auto;
     padding: 30px;
-    background-color: pink;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
     .intro {
       width: 650px;
-      height: 770px;
-      background-color: teal;
-      padding: 30px;
+      height: auto;
+      margin-bottom: 3%; 
       display: flex;
       flex-direction: column;
-      align-items: center;
+      justify-content: space-around;
+    }
+    .intro th {
+      width: 65px;
+      height: 30px;
+      line-height: 30px;
+      text-align: left;
+    }
+    .inHistory th {
+      width: 150px;
+      height: 50px;
     }
     .imgBox {
       width: 200px;
       height: 250px;
-      border-radius: 50%;
+      border-radius: 20%;
+      margin: 40px auto 20px ;
       overflow: hidden;
     }
     .imgBox img {
       width: 100%;
-      object-fit: cover;
+      height:100%;
+      object-fit: contain;
     }
       h3 {
         text-align: center;
         color: #dfe6e9;
+        margin: 20px 0 10px;
       }
     .skills {
       width: 650px;
-      height: 770px;
+      height: auto;
       padding: 30px;
-      margin-top: 3%; 
-      background-color: teal;
     }
+
+      .inSkill {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 4% 0;
+      }
+        .inSkill li {
+          width: 120px;
+          height: 120px;
+          line-height:120px;
+          border-radius: 4px;
+          text-align: center;
+          margin: auto 0;
+        }
+        .inSkill li:nth-child(2n){
+          background-color:#55efc4;
+        }
+        .inSkill li:nth-child(2n-1){
+          background-color:#a29bfe;
+        }
   /* === END MAIN === */
 
   /* === START SECTION === */
@@ -115,7 +152,20 @@
   /* === END SECTION === */
 
   @media(max-width:480px){
+    header .fa-bars {
+      display: block;
+    }
     .nav {
+      display: none;
       text-align: center;
     }
+      .nav li {
+        width: 100%;
+      }
+      .inSkill li {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        margin-top:1%;
+      }
   }

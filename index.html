@@ -22,47 +22,125 @@
   <!-- 네비게이션 내부 리스트는 script로 작성 -->
   <header>
     <ul class="nav" id="nav"></ul>
+    <i class="fas fa-bars" id="fa-bars"></i>
   </header>
   <!-- 네비게이션 끝 -->
   
+  <!-- ===START MAIN=== -->
   <main class="main">
-    <div class="intro">
+    <div class="intro" id="0">
       <div class="imgBox">
         <img src="./img/jisupic.jpg" alt="pic">
       </div> 
       <div class="about">
         <h3>About Me</h3>
-        <ul class="introduce inAbout">
-          <li>웹표준에 기반하여 UI/UX에 맞춘 편리한 웹 사이트를 개발합니다</li>
-          <li>도전을 좋아하고 항상 배움을 즐기는 신입 개발자입니다.</li>
-          <li>기본탄탄 + 새로운것을 받아들이는 자세로 임하겠습니다.</li> 
-        </ul>
+        <table class="introduce inAbout">
+          <tr> 
+            <th>Basic</th>
+            <td>
+              UI/UX를 고려한 웹/앱 사이트를 개발
+            </td>            
+          </tr>
+          
+          <tr> 
+            <th>Study</th>
+            <td>매번 도전하고 배움을 즐기는 신입 개발자</td>
+          </tr>
+          
+          <tr> 
+            <th>Editude</th>
+            <td>
+              기본 탄탄+새로운 것을 받아들이는 자세
+            </td>
+          </tr>
+           
+        </table>
       </div>
       <div class="profile">
         <h3>Profile</h3>
-        <ul class="introduce inProfile">
-          <li>NAME : 이지수</li>
-          <li>AGE : 32세</li>
-          <li>BIRTH : 1990.03.03</li>
-          <li>E-MAIL : leejisu33@gmail.com</li>
-          <li>PHONE : 010-3137-8373</li>
-        </ul>
+        <table class="introduce inProfile">
+          <tr>
+            <th>NAME</th> 
+            <td>이지수</td>
+          </tr>
+          <tr>
+            <th>AGE</th> 
+            <td>32세</td>
+          </tr>
+          <tr>
+            <th>BIRTH</th> 
+            <td>1990.03.03</td>
+          </tr>
+          <tr>
+            <th>E-MAIL</th> 
+            <td>leejisu33@gmail.com</td>
+          </tr>
+          <tr>
+            <th>PHONE</th> 
+            <td>010-3137-8373</td>
+          </tr>
+        </table>
       </div>
       <div class="history">
         <h3>History</h3>
-        <ul class="introduce inHistory">
-          <li>2009.02 김포고등학교 졸업 </li>
-          <li>2011.06 - 2012.08 호주 워킹홀리데이 활동 및 Shafston Colleage Advanced 과정 수료</li>
-          <li>2017.11 - 2020.12 풀무원 녹즙 배달  </li>
-          <li>
-            2021.03.15 - 9.15 웹디자인 및 스마트 UI/UX 웹퍼블리셔 양성과정 수료</li>
-          <li>2021.7 웹디자인기능사 자격증 취득</li>
-        </ul>
+        <table class="introduce inHistory">
+          <tr>
+            <th>2009.02</th>
+            <td>김포고등학교 졸업</td>
+          </tr>
+          <tr>
+            <th>2011.06 - 2012.08</th>
+            <td>호주 워킹홀리데이 활동 및 Shafston Colleage Advanced 과정 수료</td>
+          </tr>
+          <tr>
+            <th>2017.11 - 2020.12</th>
+            <td>풀무원 녹즙 배달</td>
+               
+          </tr>
+          <tr>
+            <th>2021.03.15 - 9.15</th>
+            <td>웹디자인 및 스마트 UI/UX 웹퍼블리셔 양성과정 수료</td>
+             
+          </tr>
+          <tr>
+            <th>2021.7</th>
+            <td>웹디자인기능사 자격증 취득</td>
+             
+          </tr>
+          </table>
       </div>
     </div>
-    <div class="skills">ddddd</div>
+    <div class="skills" id="1">
+      <ul class="inSkill skill1" id="skill1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SASS</li>
+        <li>GITHUB</li>
+      </ul>
+      <ul class="inSkill skill2" id="skill2">
+        <li>RESPONSIVE <br> DESIGN</li>
+        <li>JAVASCRIPT</li>
+        <li>JQUERY</li>
+        <li>AJAX</li>
+      </ul>
+      <ul class="inSkill skill3" id="skill3">
+        <li>FIGMA</li>
+        <li>MYSQL</li>
+        <li>PHP</li>
+        <li>NODE.JS</li>
+      </ul>
+      <ul class="inSkill skill4" id="skill4">
+        <li>ILLUSTRATOR</li>
+        <li>PHOTOSHOP</li>
+        <li>앞으로</li>
+        <li>채워나갈 공간</li>
+      </ul>
+    </div>
   </main>
-  <section class="portfolio">
+  <!-- ===END main=== -->
+
+  <!-- ===START SECTION=== -->
+  <section class="portfolio" id="2">
     <h1>P O R T F O L I O</h1>
     <div class="pBox">
       <div class="project project1">
@@ -104,5 +182,8 @@
       <div class="project project9"></div>
     </div>
   </section>
+  <footer id="3">
+    contactme
+  </footer>
 </body>
 </html>
